@@ -8,8 +8,9 @@ In a double blind negotiation, neither side knows the other's offer unless certa
 #####How do I use it?
 If you use a mac, Ruby is built in.  Download the file, type `ruby match.rb` and follow the directions.  This does include `ansi/code`for colors (just for the heck of it) so you may need to do `gem install ansi` if it's not installed on your machine and this throws an error.  Or just delete the require and the colors -- they're filligree, and not necessary.
 ######Why bother?
-I've found that the approach works really well in litigation, and saves people time and money.  A much fancier implementation can be found at www.impassebreaker.com.  I was curious how this would look if it were really simple, and what others might do with the idea if it were stripped to its core.
-
+I've found that the approach works really well in litigation, and saves people time and money.  A much fancier implementation (with more explanation) can be found at www.impassebreaker.com. 
+######Why no pretty user  interface?
+As noted above, there's a fancier version on the web that has nice UI, can send emails, create documents, it can even mix a decent Martini  (well, not just yet).   I was curious how this would look if it were really simple, and what others might do with the idea if it were stripped to its core.
 ######What can I do with this?
 See the license below.  Copy, fork; code corrections welcome ; ) I'm a lawyer, after all, not a professional programmer, and feedback is welcome.
 
