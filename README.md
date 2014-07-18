@@ -24,14 +24,14 @@ If you use a mac, Ruby is built in.  Download the file, type `ruby match.rb` and
 
 - If there is no match, Matcher just says there's no match.  This happens if the paying party is unwilling to pay an amount equal to or greater than the recipient's bottom line.
 
-- That's it.  If the mediator doesn't look at the screen they won't know the number either.  (Yes, they could potentially find it on their computer if they really want it to,  But this isn't intended to be a complete solution.)
+- That's it.  If the mediator doesn't look at the screen they won't know the number either.  (Yes, they could potentially find it on their computer if they really wanted  to,  But this isn't intended to be a complete solution -- and the full ImpasseBreaker site does solve that problem.)
 
 #####Why bother?
 I've found that the approach works really well in litigation, and saves people time and money.  A much fancier implementation (with more explanation) can be found at www.impassebreaker.com.  Mediators can be really helpful, but they also add a personal element or dynamic that can get in the way of negotiating.  Sometimes, you may not want the mediator to know what a bottom line is.  This approach allows for comparison without a human intermediary.  
 #####Why no pretty user  interface?
 As noted above, there's a fancier version on the web that has nice UI, can send emails, create documents, it can even mix a decent Martini  (well, not just yet).   I was curious how this would look if it were really simple, and what others might do with the idea if it were stripped to its core.   So this is simple by design.
 #####What can I do with this?
-See the license below.  Copy, fork, reinvent.  And code corrections are welcome ; ) I'm a lawyer, after all, not a professional programmer.  Feedback and suggested improvements are welcome.
+See the license below.  Copy, fork, reinvent.  And code corrections are welcome ; ) I'm a lawyer, after all, not a professional programmer.  Feedback and suggested improvements are certainly welcome.
 
 ----
 
