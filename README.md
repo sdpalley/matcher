@@ -11,7 +11,7 @@ If you use a mac, Ruby is built in.  Download the file, type `ruby match.rb` and
 I've found that the approach works really well in litigation, and saves people time and money.  A much fancier implementation can be found at www.impassebreaker.com.  I was curious how this would look if it were really simple, and what others might do with the idea if it were stripped to its core.
 
 ######What can I do with this?
-See the license below.  Copy, fork; code corrections welcome ; ) I'm a lawyer, after all, not a professional programmer.
+See the license below.  Copy, fork; code corrections welcome ; ) I'm a lawyer, after all, not a professional programmer, and feedback is welcome.
 
 ----
 
