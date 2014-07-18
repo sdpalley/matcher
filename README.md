@@ -2,7 +2,7 @@ Matcher
 =======
 
 ####What is this?
-Matcher is a terminal based ruby application for to perform **double-blind** settlement negotation.
+Matcher is a terminal based ruby application that allows people to do in person **double-blind** settlement negotation using a computer.
 #####Double what?
 In a double blind negotiation, neither side knows the other's offer unless certain conditions are met.  In matcher, the condition is that the "ceiling" must be greater than the "floor."
 #####How do I use it?
