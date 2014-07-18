@@ -6,7 +6,7 @@ Matcher is a terminal based ruby application that allows people to do in person 
 #####Double what?
 In a double blind negotiation, neither side knows the other's offer unless certain conditions are met.  In matcher, the condition is that the "ceiling" must be greater than the "floor."
 #####How do I use it?
-If you use a mac, Ruby is built in.  Download the file, type `ruby match.rb` and follow the directions.  This does include `ansi/code`for colors (just for the heck of it) so you may need to do `gem install ansi` if it's not installed on your machine and this throws an error.  Or just delete the require and the colors -- they're filligree, and not necessary.  
+If you use a Mac, Ruby is built in.  Download the file, type `ruby match.rb` and follow the directions.  This does include `ansi/code`for colors (just for the heck of it) so you may need to do `gem install ansi` if it's not installed on your machine and this throws an error.  Or just delete the require and the colors -- they're filligree, and not necessary.  
 #####How does it work?
 -  Assume you're in a negotiation with two parties and you've reached an impasse.  Neither side will move.
 
@@ -31,11 +31,11 @@ I've found that the approach works really well in litigation, and saves people t
 #####Why no pretty user  interface?
 As noted above, there's a fancier version on the web that has nice UI, can send emails, create documents, it can even mix a decent Martini  (well, not just yet).   I was curious how this would look if it were really simple, and what others might do with the idea if it were stripped to its core.   So this is simple by design.
 #####What can I do with this?
-See the license below.  Copy, fork, reinvent.  And code corrections are welcome ; ) I'm a lawyer, after all, not a professional programmer.  Feedback and suggested improvements are certainly welcome.
+See the license below.  Copy, fork, reinvent.  And code corrections are welcome ; ) I'm a lawyer, after all, not a professional programmer.  Feedback and suggested improvements are certainly welcome.  
 
-----
+------
 
-The MIT License (MIT)
+##The MIT License (MIT)
 
 Copyright (c) 2014 Stephen D. Palley
 

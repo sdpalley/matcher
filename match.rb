@@ -1,4 +1,14 @@
+# Match.rb
+# Double blind matching tool
+# Copyright (c) 2014 Stephen D. Palley
+# Use and distribution are subject to the MIT License 
+
+# --- Requires ---- #
+
 require 'ansi/code' #it adds color in the terminal . . . not necessary, but kinda pretty 
+require 'digest/sha3'
+require 'securerandom'
+
 
 # ---  Functions  ---- #
 
@@ -22,10 +32,22 @@ confirm = gets.chomp
 if confirm == "yes"
 clear #clear the screen so the other side can't see it
 else
-	puts "OK -- try again!"
+	puts "OK -- please try again!"
 	Process.exit
 end
 end
+
+
+
+# --- maybe we'll build a version that stores an encrypted version on the bitchain --- #
+# --- this function is work in progress -- not tested and may be broken --- #
+
+def secure_it(number)
+random = SecureRandom.random_number(2**16)	
+hash = Digest::SHA3.hexdigest(number * 32) * random 
+end
+
+## ---------------------------------------------------------------------------------- #
 
 
 def spacer
@@ -43,7 +65,7 @@ def clear
 end
 
 def about
-print ANSI::Code.yellow { "This programs performs double blind match of the bottom-line settlement posititions of a single plaintiff and a singled defendant. \n\ \n\ " }
+print ANSI::Code.yellow { "This programs performs double blind matching of the bottom-line settlement posititions of a single plaintiff and a singled defendant. \n\ \n\ " }
 print ANSI::Code.yellow { "A mediator asks one party to leave the room.  In this implementation, we start by asking the defendant to do so. \n\ \n\ " }
 print ANSI::Code.yellow { "After the defendant leaves the room, the plaintiff types their bottom line -- the least they are willing to accept -- into the terminal. \n\ \n\ " }
 print ANSI::Code.yellow { "The mediator then excuses the plaintiff, the screen is cleared, and the  defendant enters the room and enters their bottom line into the terimial. \n\ \n\ " }
@@ -63,15 +85,30 @@ print ANSI::Code.red { "The Mediator Widget \n\ \n\ " }
 about
 puts " \n\ "
 
+
+# -- Get plaintiff's secret number -- #
+
 print "Plaintiff -- enter your bottom-line: "  #plaintiff types their number into the mediator screen
-plaintiff = gets.to_i
+plaintiff = gets.chomp
+@secure_plaintiff = secure_it(plaintiff)
+plaintiff = plaintiff.to_i
 print "Plaintiff -- you entered $#{plaintiff}. Are you sure?  Type 'yes' to confirm.\n\ "
 confirm
 
+clear
 spacer
+
+
 print "Defendant -- enter your bottom-line: "  #defendant types their number into the mediator screen
-defendant = gets.to_i  
+defendant = gets.chomp
+@secure_defendant = secure_it(defendant)
+defendant = defendant.to_i
+print "Defendant -- you entered $#{defendant}. Are you sure?  Type 'yes' to confirm.\n\ "
+confirm
 clear #clear the screen so the other side can't see it
 
 a = match(plaintiff,defendant)
 puts a
+
+
+
