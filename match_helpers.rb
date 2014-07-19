@@ -31,7 +31,7 @@ end
 # --- this function is work in progress -- not tested and may be broken --- #
 
 def secure_it(number)
-	random = SecureRandom.random_number(2**80)	
+	random = rand(2**80)	
 	hash = Digest::SHA3.hexdigest(('random') * number.to_i)
 puts "Hash: " + hash  
 end
