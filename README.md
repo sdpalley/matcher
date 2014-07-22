@@ -30,8 +30,14 @@ If you use a Mac, Ruby is built in.  Download the file, type `ruby match.rb` and
 I've found that the approach works really well in litigation, and saves people time and money.  A much fancier implementation (with more explanation) can be found at www.impassebreaker.com.  Mediators can be really helpful, but they also add a personal element or dynamic that can get in the way of negotiating.  Sometimes, you may not want the mediator to know what a bottom line is.  This approach allows for comparison without a human intermediary.  
 #####Why no pretty user  interface?
 As noted above, there's a fancier version on the web that has nice UI, can send emails, create documents, it can even mix a decent Martini  (well, not just yet).   I was curious how this would look if it were really simple, and what others might do with the idea if it were stripped to its core.   So this is simple by design.
+
+#####To-dos & Things that would be cool to add
+- p2p communication
+- Matching using a form of Yao's protocol for secure two-party computation. 
+
 #####What can I do with this?
 See the license below.  Copy, fork, reinvent.  And code corrections are welcome ; ) I'm a lawyer, after all, not a professional programmer.  Feedback and suggested improvements are certainly welcome.  
+
 
 ------
 

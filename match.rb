@@ -7,7 +7,6 @@
 require File.join(File.dirname(__FILE__), 'match_helpers.rb')
 require 'ansi/code' #it adds color in the terminal . . . not necessary, but kinda pretty 
 require 'digest/sha3'
-require 'securerandom'
 
 
 # ----- "The View" ----- #
