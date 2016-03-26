@@ -27,7 +27,7 @@ end
 
 
 
-# --- maybe we'll build a version that stores an encrypted version on the bitchain --- #
+# --- maybe we'll build a version that stores an encrypted version on the blockchain --- #
 # --- this function is work in progress -- not tested and may be broken --- #
 
 def secure_it(number)
